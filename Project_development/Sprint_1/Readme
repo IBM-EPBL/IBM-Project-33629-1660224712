@@ -1,1 +1,15 @@
 
+Project Development Phase
+
+Project Development - Delivery Of Sprint-1 
+
+- Dataset collection 
+- Image Pre-processing
+- Training the model
+- Testing and evaluation of the model
+- Saving the Model 
+
+Files uploaded:
+- Dataset
+- Python notebook for Image pre-processing and model building
+- Model 
