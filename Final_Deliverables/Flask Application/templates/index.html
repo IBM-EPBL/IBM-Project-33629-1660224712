@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>PARKINSON'S DISEASE </title>
+        <link rel = "stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    </head>
+    <style>
+        h3{
+            text-align:center;
+            color:rgb(7, 4, 4);
+            margin:10px;
+            font-family:'Roboto',sans-serif;
+            font-size:18px;
+        }
+
+        p{
+            color:rgb(0, 0, 0);
+            /* text-indent:30px; */
+            margin:10px;
+            font-family:'Roboto',sans-serif;
+            font-size:15px;
+        }
+    </style>
+
+    <body>
+        <center>
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <!-- <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button> -->
+                </div>
+                <form id="login" class="input-group" action="/form_login" method="post">
+                    
+                    <br>
+                    <br>
+                    <h3>Login</h3><br>
+                    <p>Enter your User ID</p>
+                    
+                    <input type="text" class="input-field" placeholder="User ID" name ="userid" required>
+                    <br><br>
+                    <p>Enter your Password</p>
+                    
+                    <input type="password" class="input-field" placeholder="Password" name="pwd" required>
+                    <br>
+                    <input type="checkbox" class="check-box"><span>Remember me</span>
+                    <br><br>
+                    <button type="submit" class="submit-btn" value="Login">Login</button>
+                </form>
+
+                <h6 class="err">{{info}}</h6>
+                <form id="register" class="input-group" action="/form_reg" method="post">
+                    
+                    <br>
+                    <br>
+                    <h3>Do not have an account yet?</h3><br>
+                    <p>Enter your mail ID</p>
+                    <input type="email" class="input-field" placeholder="Email ID">
+                    <br><br>
+                    <p>Enter your Username</p>
+                    <input type="text" class="input-field" placeholder="User ID" name ="userid" required>
+                    <br><br>
+                    <p>Enter your Password</p>
+                    <input type="password" class="input-field" placeholder="Password" name="pwd" required>
+                    <br><br>
+                    <button type="submit" id = "sub" class="submit-btn" >Register</button>
+                </form>
+                <h6 class="err">{{info}}</h6>
+            </div>
+        </div>
+        </center>
+        <script>
+            var x = document.getElementById("login")
+            var y = document.getElementById("register")
+            var z = document.getElementById("btn")
+            function register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            }
+        </script>
+    </body>
+</html>
