@@ -1,1 +1,5 @@
+Project Development - Delivery Of Sprint-4
 
+- Deploying the model in IBM Cloud 
+- Flask web application to get user input and predict the presence of Parkinson's disease
+- Testing the app
